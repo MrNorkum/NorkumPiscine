@@ -1,42 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/04 23:39:02 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 06:38:34 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+char	*ft_strlowcase(char *str)
 {
-	write(1, &x, 1);
+	int	i;
+
+	i = -1;
+	while (str[++i])
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+	return (str);
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	char str[] = "Mr. Norkum Was Here Xd";
+	printf("%d", ft_strlowcase(str));
 }

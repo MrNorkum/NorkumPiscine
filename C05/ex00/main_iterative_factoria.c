@@ -1,42 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/09 21:20:05 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 07:50:32 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+int	ft_iterative_factorial(int nb)
 {
-	write(1, &x, 1);
+	int	x;
+	int	i;
+
+	x = 1;
+	i = 0;
+	if (nb < 0)
+		return (0);
+	else if (nb == 0)
+		return (1);
+	while (0 < nb && nb < 13)
+	{
+		while (++i <= nb)
+			x *= i;
+		return (x);
+	}
+	return (0);
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	printf("%d", ft_iterative_factorial(7));
 }

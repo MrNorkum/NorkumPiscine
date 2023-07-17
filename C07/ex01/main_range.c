@@ -1,42 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/14 02:08:34 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 08:36:05 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-void	ft_putchar(char x)
+int	*ft_range(int min, int max)
 {
-	write(1, &x, 1);
+	int		i;
+	int		*buffer;
+
+	if (min >= max)
+		return (0);
+	buffer = malloc((max - min) * sizeof(int));
+	if (!buffer)
+		return (0);
+	i = -1;
+	while (++i < max - min)
+		buffer[i] = min + i;
+	return (buffer);
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	int tab[10] = ft_range(0, 10);
+	int i = 0;
+	while (i < 10)
+		printf("%d", tab[i++]);
 }

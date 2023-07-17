@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/31 21:07:00 by hkeles            #+#    #+#             */
+/*   Updated: 2023/04/02 09:46:31 by hkeles           ###   ########.tr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_ft(int *nbr)
+{
+	*nbr = 42;
+}
+
+#include <stdio.h>
+int main(void)
+{
+	int x = 13;
+	printf("%d\n", x);
+	ft_ft(&x);
+	printf("%d", x);
+}
+
+//Burada bir integer x değeri oluşturduk.
+//Oluşan x değerimiz ram'de rastgele bir adreste oluşuyor.
+//Biz ise bu x değerine 13 verdik yani x'in ram'deki adresine 13 yazdık.
+//Ardından ft_ft fonksiyonuna *nbr işaretçisine &(ampersan) ile x değişkeninin adresini gönderdik.
+//Böylece artık *nbr işaretçisi artık x değişkeninin ram'deki adresini işaret ediyor.
+//ft_ft fonksiyonunun içinde ise biz bu *nbr işaretçisinin işaret ettiği yere 42 yazıyoruz.
+//Tabiki adres olarak x'in adresini gönderdiğimiz için *nbr işaretçisinin işaret ettiği yer x değişkeninin adresi oluyor.
+//Ve ardından o adrese 42 yazıyoruz.
+//O adreste 13 yazyordu ancak biz o adrese 42 yazdık.
+//Böylece x değişkenini yazdırdığımız zaman artık bize 42 çıktısı veriyor.
+//Çünkü adresinde artık 13 değil 42 yazıyor.

@@ -1,42 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/01 03:12:07 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 05:33:06 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	write(1, &x, 1);
+	int	i;	
+	int	swap;
+
+	i = -1;
+	while (++i < (size / 2))
+	{
+		swap = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = swap;
+	}
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	int tab[7] = {2, 4, 1, 5, 6, 7, 3};
+	ft_rev_int_tab(tab, 7);
+	int i = 0;
+	while (i < 7)
+		printf("%d", tab[i++]);
 }

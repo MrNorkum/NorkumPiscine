@@ -1,42 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/09 23:28:57 by hkeles            #+#    #+#             */
+/*   Updated: 2023/04/10 16:17:49 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+int	ft_iterative_power(int nb, int power)
 {
-	write(1, &x, 1);
+	int	i;
+	int	r;
+
+	i = 1;
+	r = 1;
+	if (nb == 0 && power == 0)
+		return (1);
+	else if (nb == 0 || power < 0)
+		return (0);
+	while (power > 0)
+	{
+		if ((power % 2) == 1)
+			r *= nb;
+		nb *= nb;
+		power /= 2;
+	}
+	if (r > 2147483647)
+		return (0);
+	return (r);
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	printf("%d", ft_iterative_power(2, 7));
 }

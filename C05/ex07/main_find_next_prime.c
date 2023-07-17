@@ -1,42 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/04/10 15:13:25 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 08:12:18 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+int	ft_is_prime(int nb)
 {
-	write(1, &x, 1);
+	int	i;
+
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	while (i <= (nb / 2))
+	{
+		if (nb % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
 }
 
-void	ft_print_comb2(void)
+int	ft_find_next_prime(int nb)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
+	if (nb <= 2)
+		return (2);
+	while (1)
 	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
+		if (ft_is_prime(nb) == 1)
+			return (nb);
+		nb++;
 	}
+	return (0);
+}
+
+#include <stdio.h>
+int main(void)
+{
+	printf("%d", ft_find_next_prime(12));
 }

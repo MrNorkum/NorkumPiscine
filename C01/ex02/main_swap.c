@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/27 09:57:45 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 04:32:30 by hkeles           ###   ########.tr       */
+/*   Created: 2023/03/31 21:44:58 by hkeles            #+#    #+#             */
+/*   Updated: 2023/07/12 05:11:56 by hkeles           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char x)
+void	ft_swap(int *a, int *b)
 {
-	write(1, &x, 1);
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
 }
 
-void	ft_print_comb2(void)
+#include <stdio.h>
+int main(void)
 {
-	int	a;
-	int	b;
-
-	a = 0;
-	while (a <= 98)
-	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
-			ft_putchar(' ');
-			ft_putchar((b / 10) + '0');
-			ft_putchar((b % 10) + '0');
-			if (a != 98)
-				write(1, ", ", 2);
-			b++;
-		}
-		a++;
-	}
+	int a = 13;
+	int b = 42;
+	ft_swap(&a, &b);
+	printf("New A:%d\nNew B:%d", a, b);
 }
+
+//Burada ise oluşturduğumuz iki değerin yerlerini değiştiriyoruz.
+//Birazıcık matematik ile yapılan işlemi anlayabilirsiniz.d
+//Kolay gelsin sözelciler efdklnfgdnfdfd
