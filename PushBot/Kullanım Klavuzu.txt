@@ -1,0 +1,15 @@
+Evet gelelim PushBot'a
+Bu bot sizin havuzda ve eğer ana eğitime geçerseniz sürekli kullanacağınız komutları bir araya toplayan bir shell scriptidir.
+Moulinette'e tam uygun gelişmiş Norminette atar.
+Dosyalarda main ve kütüphane denetimi yapar varsa söyler.
+İçeride unuttuğunuz a.out dosyalarını siler.
+Git deposu dahil . ile başlayan tüm klasör ve dosyaları siler.
+Her görünür dosya silme işleminde size silip silmemesi gerektiğini sorar.
+y derseniz siler n derseniz silmez.
+Bütün işlemler bittikten sonra kendisini silip silmemesi gerektiğini sorar.
+Eğer sizin içinde her şey tamamsa y dersiniz ve artık git deponuzu oluşturup pushlamaya geçebilirsiniz.
+Eğer hala hatalar var ise n'ye basıp gerekli yerleri düzelttikten sonra tekrar çalıştırabilirsiniz.
+
+bash pushbot_v2.3 komutu ile pushlayacağınız klasör içinde çalıştırabilirsiniz.
+
+Lütfen stabil çalışması adına adının doğru olduğundan emin olun. -> pushbot_v2.3

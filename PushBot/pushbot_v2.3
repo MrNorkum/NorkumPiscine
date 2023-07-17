@@ -1,0 +1,33 @@
+find . -type f -name ".*" -print -exec rm -rf {} \; && \
+
+find . -type d -name ".*" -print -exec rm -rf .[!.]* {} \; && \
+
+find . -name ".vscode" -type d -print -exec rm -rf {} \; && \
+
+find . -type f -name "1" -print -exec rm -rf {} \; && \
+
+find . -type f -name "*.log" -print -exec rm -rf {} \; && \
+
+find . -type f -name "*.swp" -print -exec rm -rf {} \; && \
+
+find . -type f -name "a.out" -print -exec rm -ri {} \; && \
+
+find . -type f -name ".DS.Store" -print -exec rm -ri {} \; && \
+
+find . -type f -exec xattr -c {} \; && \
+
+find . -type d -exec xattr -c {} \; && \
+
+find . -name "*.c" -type f -exec sh -c 'grep -q "#include" {} && echo -e "\033[1;31mKütüphane Tanımlı!!!: {}\033[0m"' \; && \
+
+find . -name "*.c" -type f -exec sh -c 'grep -q "int main" {} && echo -e "\033[1;31mMain Dosyası Var: {}\033[0m"' \; && \
+
+find . -type f -name "*.c" -exec norminette -R CheckForbiddenSourceHeader {} \; && \
+
+find . -type f -exec xattr -c {} \; && \
+
+find . -type d -exec xattr -c {} \; && \
+
+echo -e "\033[1;32mPushBot V2.3!\nDeveloped By HKELES -> Mr.Norkum <-\033[0m" && \
+
+find . -name "pushbot*" -type f -print -exec rm -ri {} \;
