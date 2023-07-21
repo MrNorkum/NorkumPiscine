@@ -23,7 +23,7 @@ int	ft_strlen(char *str)
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	d;
-	unsigned int	s;
+	unsigned int	i;
 
 	i = -1;
 	d = ft_strlen(dest);
