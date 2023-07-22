@@ -24,23 +24,23 @@ char	*ft_strlowcase(char *str)
 char	*ft_strcapitalize(char *str)
 {
 	int	i;
-	int	bk;
+	int	control;
 
 	i = -1;
-	bk = 1;
+	control = 1;
 	ft_strlowcase(str);
 	while (str[++i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (bk == 1)
+			if (control == 1)
 				str[i] -= 32;
-			bk = 0;
+			control = 0;
 		}
 		else if (str[i] >= '0' && str[i] <= '9')
-			bk = 0;
+			control = 0;
 		else
-			bk = 1;
+			control = 1;
 	}
 	return (str);
 }
