@@ -49,5 +49,5 @@ char	*ft_strcapitalize(char *str)
 int main(void)
 {
 	char str[] = "mR. nORkum wAS HeRe 13XD";
-	printf("%d", ft_strcapitalize(str));
+	printf("%s", ft_strcapitalize(str));
 }
