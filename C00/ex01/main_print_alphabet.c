@@ -15,10 +15,10 @@
 void	ft_print_alphabet(void)
 
 {
-	char	x;
+	int	x;
 
 	x = 96;
-	while (x++ < 122)
+	while (++x <= 122)
 		write(1, &x, 1);
 }
 
@@ -29,10 +29,11 @@ int main(void)
 
 //Alfabeyi yazdıracağız lakin farkettiyseniz x'i 97 değil 96 olarak aldım.
 //burada gerçekleşen olay şudur.
-//X while koşuluna 96 olarak girer ve 96 küçük müdür 122 sorusunu cevapladıktan sonra kendini bir arttırır.
-//Böylece yazdırma kısmına 97 olarak gelir ve bu işlem böyle devam eder.
-//En son ise y karakterini yani 121'i yazdırdıktan sonra koşula tekrar girer ve kontrol eder.
-//121 küçük müdür 122? ve ardından kendisini bir arttırır.
+//X while koşuluna girmeden önce artıyor ve 97 oluyorve sonra 97 küçük eşit midir 122 sorusunu cevaplıyor.
+//Cevap true ise içeri giriyor ve 97'nin ascii karşılığını ekrana yazdırıyor.
+//İşlem böyle devam eder.
+//En son ise y karakterini yani 121'i yazdırdıktan sonra koşula tekrar girer.
+//Kendini arttırdıktan sonra kontrol eder 122 küçük eşit midir 122?
 //Koşulun cevabı true olduğu için içeriye girer ve 122'yi yazdırır.
-//Koşula tekrar girer ve soruyu sorar 122 küçük müdür 122? ve ardından kendini bir arttırır.
+//Koşula tekrar girer kendini bir arttırır ve soruyu sorar 123 küçük eşit midir 122?
 //Koşulun cevabı false olduğu için 123 yazdırılmaz ve işlem böylece son bulur.
