@@ -27,8 +27,7 @@ int main(void)
 	int ******p6 = &p5;
 	int *******p7 = &p6;
 	int ********p8 = &p7;
-	int *********p9 = &p8;
-	ft_ultimate_ft(p9);
+	ft_ultimate_ft(&p8);
 	printf("%d", x);
 }
 
@@ -38,7 +37,7 @@ int main(void)
 //Ardından x değişkenine 13 değerini veriyoruz ve böylece artık adresinde 13 yazıyor.
 //Burada x değişkeninin adresini p1 işaretçisine gönderiyoruz.
 //Ardından p1 işaretçisinin işaret ettiği yeri de p2 işaretçisine gönderiyoruz.
-//p2'nin işaret ettiği yeri p3, p3'ün işaret ettiği yeri p4'e derken en son p8'in işaret ettiği yeri de p9'a gönderiyoruz.
+//p2'nin işaret ettiği yeri p3, p3'ün işaret ettiği yeri p4'e derken en son p7'nin işaret ettiği yeri de p8'e gönderiyoruz.
 //Böylece bütğn işaretçiler x değişkeninin adresini işaret ediyor.
-//Biz ise p9'un işaret ettiği yeri ft_ultimate_ft fonksiyonuna gönderiyoruz ve nbr işaretçisi o adrese 42 yazıyor.
-// işlem bu kadar.
+//Biz ise p8'in işaret ettiği yeri ft_ultimate_ft fonksiyonuna gönderiyoruz ve nbr işaretçisi o adrese 42 yazıyor.
+//işlem bu kadar.
