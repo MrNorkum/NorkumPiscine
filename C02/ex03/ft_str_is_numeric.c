@@ -4,7 +4,7 @@ int	ft_str_is_numeric(char *str)
 		return (1);
 	while (*str)
 	{
-		if (*str >= '0' && *str <= '9')
+		if ('0' <= *str && *str <= '9')
 			str++;
 		else
 			return (0);
