@@ -1,29 +1,29 @@
 char    *ft_strjoin(int size, char **strs, char *sep)
 {
     char    *s;
-    int        arg;
-    int        index;
-    int        i;
+    int     a;
+    int     i;
+    int     j;
 
-    i = 0;
-    arg = -1;
-    s = malloc(8000);
-    while (++arg < size)
+    j = 0;
+    a = -1;
+    s = malloc(80);
+    while (++a < size)
     {
-        index = 0;
-        while (strs[arg][index])
-            s[i++] = strs[arg][index++];
-        index = 0;
-        while (sep[index] && arg < size - 1)
-            s[i++] = sep[index++];
+        i = 0;
+        while (strs[a][i])
+            s[j++] = strs[a][i++];
+        i = 0;
+        while (sep[i] && a < size - 1)
+            s[j++] = sep[i++];
     }
-    s[i] = '\0';
+    s[j] = '\0';
     return (s);
 }
 
 int    main(void)
 {
-    char    **strs = malloc(sizeof(char *) * 10);
+    char    **strs = malloc(80);
     strs[0] = "Mr";
     strs[1] = "Norkum";
     char    sep[] = " ";
