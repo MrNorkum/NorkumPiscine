@@ -38,8 +38,5 @@ int	main(int ac, char **av)
 	}
 	a = 0;
 	while (++a < ac)
-	{
-		ft_putstr(av[a]);
-		write(1, "\n", 1);
-	}
+		ft_putendl(av[a]);
 }
