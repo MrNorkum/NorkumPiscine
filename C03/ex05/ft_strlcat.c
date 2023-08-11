@@ -10,17 +10,16 @@ int	ft_strlen(char *str)
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	src_len;
-	unsigned int	dst_len;
+	unsigned int	slen;
+	unsigned int	dlen;
 	unsigned int	i;
 
 	i = -1;
-	src_len = ft_strlen(src);
-	dst_len = ft_strlen(dest);
-	if (dst_len >= size)
-		return (size + src_len);
-	while (src[++i] && i + dst_len < size -1)
-		dest[dst_len + i] = src[i];
-	dest[dst_len + i] = '\0';
-	return (dst_len + src_len);
+	slen = ft_strlen(src);
+	dlen = ft_strlen(dest);
+	if (dlen >= size)
+		return (size + slen);
+	while (src[++i] && i + dlen < size -1)
+		dest[dlen + i] = src[i];
+	return (dest[dlen + i] = '\0', dlen + slen);
 }
