@@ -16,7 +16,7 @@ char	*ft_strcat(char *dest, char *src)
 #include <stdio.h>
 int main(void)
 {
-	char dest[27] = "Mr. Norkum ";
-	char src[] = "WAS Here Xd";
-	printf("%d", ft_strcat(dest, src));
+	char dest[27] = "Mr. Norkum";
+	char src[] = " WAS Here Xd";
+	printf("%s", ft_strcat(dest, src));
 }
