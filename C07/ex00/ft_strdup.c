@@ -2,12 +2,12 @@
 
 int	ft_strlen(char *str)
 {
-	int	len;
+	int	i;
 
-	len = -1;
-	while (str[++len])
+	i = -1;
+	while (str[++i])
 		;
-	return (len);
+	return (i);
 }
 
 char	*ft_strdup(char *src)
@@ -16,7 +16,7 @@ char	*ft_strdup(char *src)
 	char	*dest;
 
 	i = -1;
-	dest = (char *)malloc(ft_strlen(src) + 1));
+	dest = (char *)malloc(ft_strlen(src) + 1);
 	if (!dest)
 		return (0);
 	while (src[++i])
