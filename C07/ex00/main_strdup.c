@@ -21,8 +21,7 @@ char	*ft_strdup(char *src)
 		return (0);
 	while (src[++i])
 		dest[i] = src[i];
-	dest[i] = '\0';
-	return (dest);
+	return (dest[i] = '\0', dest);
 }
 
 #include <stdio.h>
