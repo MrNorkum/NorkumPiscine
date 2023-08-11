@@ -4,13 +4,12 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	unsigned int	i;
 
 	i = -1;
-	d = 0;
-	while (dest[d])
-		d++;
+	d = -1;
+	while (dest[++d])
+		;
 	while (src[++i] && i < nb)
 		dest[d + i] = src[i];
-	dest[d + i] = '\0';
-	return (dest);
+	return (dest[d + i] = '\0', dest);
 }
 
 #include <stdio.h>
