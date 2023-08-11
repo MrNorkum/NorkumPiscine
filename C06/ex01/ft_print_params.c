@@ -2,13 +2,13 @@
 
 int	main(int ac, char **av)
 {
-	int	x;
+	int	a;
 
-	x = 0;
-	while (++x < ac)
+	a = 0;
+	while (++a < ac)
 	{
-		while (*av[x])
-			write(1, av[x]++, 1);
+		while (*av[a])
+			write(1, av[a]++, 1);
 		write(1, "\n", 1);
 	}
 }
