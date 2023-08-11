@@ -17,8 +17,7 @@ char    *ft_strjoin(int size, char **strs, char *sep)
         while (sep[i] && a < size - 1)
             s[j++] = sep[i++];
     }
-    s[j] = '\0';
-    return (s);
+    return (s[j] = '\0', s);
 }
 
 int    main(void)
