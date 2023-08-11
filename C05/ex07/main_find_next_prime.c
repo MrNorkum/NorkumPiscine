@@ -6,11 +6,8 @@ int	ft_is_prime(int nb)
 	if (nb <= 1)
 		return (0);
 	while (i * i <= nb && i <= 46340)
-	{
-		if (nb % i == 0)
+		if (nb % i++ == 0)
 			return (0);
-		i++;
-	}
 	return (1);
 }
 
