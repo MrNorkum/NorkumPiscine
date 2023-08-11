@@ -13,7 +13,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 #include <stdio.h>
 int main(void)
 {
-	char str[] = "Mr. Norkum wAS Here Xd"
+	char str[] = "Mr. Norkum wAS Here Xd";
 	char str2[] = "Mr. Norkum WAS Here Xd";
 	printf("%d", ft_strncmp(str, str2, 10));
 }
