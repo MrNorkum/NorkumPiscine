@@ -23,7 +23,6 @@ void	ft_putstr_non_printable(char *str)
 	}
 }
 
-#include <stdio.h>
 int main(void)
 {
 	char str[] = "Mr. \norkum Was Here Xd";
