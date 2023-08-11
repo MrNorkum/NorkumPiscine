@@ -11,9 +11,3 @@ int	ft_iterative_power(int nb, int power)
 	    r *= nb;
 	return (r);
 }
-
-#include <stdio.h>
-int main(void)
-{
-	printf("%d", ft_iterative_power(2, 7));
-}
