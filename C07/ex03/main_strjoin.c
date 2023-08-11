@@ -22,6 +22,7 @@ char    *ft_strjoin(int size, char **strs, char *sep)
     return (s[j] = '\0', s);
 }
 
+#include <stdio.h>
 int    main(void)
 {
     char    **strs = malloc(80);
