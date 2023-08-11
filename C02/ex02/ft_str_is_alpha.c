@@ -4,8 +4,8 @@ int	ft_str_is_alpha(char *str)
 		return (1);
 	while (*str)
 	{
-		if ((*str >= 'A' && *str <= 'Z')
-			|| (*str >= 'a' && *str <= 'z'))
+		if (('A' <= *str && *str <= 'Z')
+			|| ('a' <= *str && *str <= 'z'))
 			str++;
 		else
 			return (0);
