@@ -4,11 +4,10 @@ char	*ft_strcat(char *dest, char *src)
 	int	i;
 
 	i = -1;
-	d = 0;
-	while (dest[d])
-	    d++;
+	d = -1;
+	while (dest[++d])
+	    ;
 	while (src[++i])
 		dest[d + i] = src[i];
-	dest[d + i] = '\0';
-	return (dest);
+	return (dest[d + i] = '\0', dest);
 }
