@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/08 11:31:30 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 07:15:55 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
@@ -23,7 +11,7 @@ int	ft_strcmp(char *s1, char *s2)
 #include <stdio.h>
 int main(void)
 {
-	char str[] = "Mr. Norkum wAS Here Xd"
+	char str1[] = "Mr. Norkum wAS Here Xd";
 	char str2[] = "Mr. Norkum WAS Here Xd";
-	printf("%d", ft_strcmp(str, str2));
+	printf("%d", ft_strcmp(str1, str2));
 }
