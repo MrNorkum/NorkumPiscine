@@ -18,12 +18,9 @@ int	ft_find_next_prime(int nb)
 {
 	if (nb <= 2)
 		return (2);
-	while (nb > 2)
-	{
-		if (ft_is_prime(nb))
-			return (nb);
-		nb++;
-	}
+	while (1)
+		if (ft_is_prime(nb++))
+			return (--nb);
 	return (0);
 }
 
