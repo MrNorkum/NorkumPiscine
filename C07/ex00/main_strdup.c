@@ -1,49 +1,27 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hkeles <hkeles@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/14 01:59:31 by hkeles            #+#    #+#             */
-/*   Updated: 2023/07/12 08:30:09 by hkeles           ###   ########.tr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdlib.h>
 
 int	ft_strlen(char *str)
 {
-	int	len;
-
-	len = -1;
-	while (str[++len])
-		;
-	return (len);
-}
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
+	int	i;
 
 	i = -1;
-	if (size != 0)
-	{
-		while (src[++i] && i < size - 1)
-			dest[i] = src[i];
-		dest[i] = '\0';
-	}
-	return (ft_strlen(src));
+	while (str[++i])
+		;
+	return (i);
 }
 
 char	*ft_strdup(char *src)
 {
+	int	i;
 	char	*dest;
 
-	dest = malloc(sizeof(char) * ft_strlen(src) + 1);
+	i = -1;
+	dest = (char *)malloc(ft_strlen(src) + 1);
 	if (!dest)
 		return (0);
-	ft_strlcpy(dest, src, ft_strlen(src) + 1);
+	while (src[++i])
+		dest[i] = src[i];
+	dest[i] = '\0';
 	return (dest);
 }
 
