@@ -1,21 +1,21 @@
-int	ft_atoi(char *str)
+int	my_atoi(char *str, int sign, int res)
 {
-	int	d;
-	int	res;
-
-	d = 1;
-	res = 0;
 	while (*str == 32 || (*str >= 9 && *str <= 13))
 		str++;
 	while (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-			d *= -1;
+			sign *= -1;
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
 		res = res * 10 + *str++ - 48;
-	return (res * d);
+	return (res * sign);
+}
+
+int	ft_atoi(char *str)
+{
+	return (my_atoi(str, 1, 0));
 }
 
 #include <stdio.h>
