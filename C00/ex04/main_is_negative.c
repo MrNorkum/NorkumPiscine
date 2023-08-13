@@ -11,12 +11,9 @@ void	ft_is_negative(int n)
 int main(void)
 {
 	ft_is_negative(-42);
+	write(1, "\n", 1);
 	ft_is_negative(0);
+	write(1, "\n", 1);
 	ft_is_negative(42);
+	write(1, "\n", 1);
 }
-
-//Burada if ve else koşullarının nasıl çalıştığını öğreniyoruz.
-//Fonksiyona bakacak olursak bir integer yani tam sayı değeri ile işleme sokuluyor.
-//Fonksiyonun içinde ise koşul şudur: (eğer)if n tam sayısı sıfırdan küçük ise N yazdır.
-//(Diğer koşullarda)else P yazdır.
-//Böylece işlem son bulur.
