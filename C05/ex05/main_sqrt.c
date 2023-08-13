@@ -1,14 +1,13 @@
 int	ft_sqrt(int nb)
 {
-	long	r;
+	long	i;
 
-	r = 0;
-	while (++r <= 46340 && r * r <= nb)
-		if (r * r == nb)
-			return (r);
+	i = 0;
+	while (++i <= 46340 && i * i <= nb)
+		if (i * i == nb)
+			return (i);
 	return (0);
 }
-
 
 #include <stdio.h>
 int main(void)
