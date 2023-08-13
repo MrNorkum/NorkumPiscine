@@ -16,8 +16,8 @@ void	ft_print_comb2(void)
 		b = a + 1;
 		while (b <= 99)
 		{
-			ft_putchar((a / 10) + 48);
-			ft_putchar((a % 10) + 48);
+			ft_putchar((a / 10) + '0');
+			ft_putchar((a % 10) + '0');
 			ft_putchar(' ');
 			ft_putchar((b / 10) + '0');
 			ft_putchar((b % 10) + '0');
