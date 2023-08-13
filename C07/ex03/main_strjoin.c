@@ -9,7 +9,7 @@ char    *ft_strjoin(int size, char **strs, char *sep)
 
     j = 0;
     a = -1;
-    s = malloc(80);
+    s = malloc(800);
     while (++a < size)
     {
         i = 0;
@@ -25,7 +25,7 @@ char    *ft_strjoin(int size, char **strs, char *sep)
 #include <stdio.h>
 int    main(void)
 {
-    char    **strs = malloc(80);
+    char    **strs = malloc(800);
     strs[0] = "Mr";
     strs[1] = "Norkum";
     char    sep[] = " ";
