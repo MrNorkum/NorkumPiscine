@@ -9,7 +9,7 @@ char    *ft_strjoin(int size, char **strs, char *sep)
 
     j = 0;
     a = -1;
-    s = malloc(80);
+    s = malloc(800);
     while (++a < size)
     {
         i = 0;
