@@ -2,9 +2,9 @@
 
 void	ft_print_numbers(void)
 {
-	char	x;
+	int	x;
 
-	x = 47;
-	while (++x <= 57)
-		write(1, &x, 1);
+	x = 48;
+	while (x <= 57 && write(1, &x, 1))
+		x++;
 }
