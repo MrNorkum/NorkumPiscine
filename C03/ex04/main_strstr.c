@@ -9,7 +9,7 @@ char	*ft_strstr(char *str, char *to_find)
 		return (str);
 	while (str[s])
 	{
-		while (str[s + t] && to_find[t] == str[s + t])
+		while (to_find[t] == str[s + t] && str[s + t])
 			t++;
 		if (to_find[t] == '\0')
 			return (str + s);
