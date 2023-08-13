@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_putendl(char *str)
+void	ft_putstrnl(char *str)
 {
 	while (*str && write(1, str++, 1))
 		;
@@ -38,5 +38,5 @@ int	main(int ac, char **av)
 	}
 	a = 0;
 	while (++a < ac)
-		ft_putendl(av[a]);
+		ft_putstrnl(av[a]);
 }
