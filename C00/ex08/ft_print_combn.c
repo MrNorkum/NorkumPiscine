@@ -1,8 +1,8 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putchar(char x)
 {
-	write(1, &c, 1);
+	write(1, &x, 1);
 }
 
 void	ft_putout(int n, int *tab, int pos)
@@ -13,7 +13,7 @@ void	ft_putout(int n, int *tab, int pos)
 		write(1, ", ", 2);
 	i = 0;
 	while (i < n)
-		ft_putchar(tab[i++] + '0');
+		ft_putchar(tab[i++] + 48);
 }
 
 void	ft_print_comb_increment(int n, int *tab)
