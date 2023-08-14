@@ -10,24 +10,23 @@ int	ft_strlen(char *str)
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	slen;
-	unsigned int	dlen;
 	unsigned int	i;
+	unsigned int	d;
+	unsigned int	s;
 
 	i = -1;
-	slen = ft_strlen(src);
-	dlen = ft_strlen(dest);
-	if (dlen >= size)
-		return (size + slen);
-	while (src[++i] && i + dlen < size -1)
-		dest[dlen + i] = src[i];
-	return (dest[dlen + i] = '\0', dlen + slen);
+	d = ft_strlen(dest);
+	s = ft_strlen(src);
+	if (!size || size <= d)
+		return (s + size);
+	while (src[++i] && i < size - d - 1)
+		dest[d + i] = src[i];
+	return (dest[d + i] = '\0', d + s);
 }
 
-#include <stdio.h>
 int main(void)
 {
-	char dest[27] = "Mr. Norkum ";
-	char src[] = "WAS Here Xd";
-	printf("%d", ft_strlcat(dest, src, 9));
+	char dest[23] = "Mr. Norkum ";
+	char src[] = "Was Here Xd";
+	ft_printf("%d | %s", ft_strlcat(dest, src, 23), dest);
 }
