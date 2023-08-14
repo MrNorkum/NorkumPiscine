@@ -24,9 +24,10 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dest[d + i] = '\0', d + s);
 }
 
+#include <stdio.h>
 int main(void)
 {
 	char dest[23] = "Mr. Norkum ";
 	char src[] = "Was Here Xd";
-	ft_printf("%d | %s", ft_strlcat(dest, src, 23), dest);
+	printf("%d | %s", ft_strlcat(dest, src, 23), dest);
 }
