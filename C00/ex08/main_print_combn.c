@@ -5,7 +5,7 @@ void	ft_putchar(char x)
 	write(1, &x, 1);
 }
 
-void	ft_putout(int n, int *tab, int pos)
+void	ft_putout(int n, int *arr, int pos)
 {
 	int	i;
 
@@ -13,39 +13,39 @@ void	ft_putout(int n, int *tab, int pos)
 		write(1, ", ", 2);
 	i = 0;
 	while (i < n)
-		ft_putchar(tab[i++] + 48);
+		ft_putchar(arr[i++] + 48);
 }
 
-void	ft_print_comb_increment(int n, int *tab)
+void	ft_print_comb_increment(int n, int *arr)
 {
 	int	i;
 	int	max;
 
 	max = 9;
 	i = n - 1;
-	while (tab[i--] == max--)
+	while (arr[i--] == max--)
 		;
-	tab[i--] += 1;
+	arr[i--] += 1;
 	while (i++ < n)
-		tab[i + 1] = tab[i] + 1;
+		arr[i + 1] = arr[i] + 1;
 }
 
 void	ft_print_combn(int n)
 {
-	int	tab[10];
+	int	arr[10];
 	int	i;
 
 	i = -1;
 	while (++i < n)
-		tab[i] = i;
-	ft_putout(n, tab, 0);
-	while (tab[0] != 10 - n || tab[n - 1] != 9)
+		arr[i] = i;
+	ft_putout(n, arr, 0);
+	while (arr[0] != 10 - n || arr[n - 1] != 9)
 	{
-		if (tab[n - 1] != 9)
-			tab[n - 1] += 1;
+		if (arr[n - 1] != 9)
+			arr[n - 1] += 1;
 		else
-			ft_print_comb_increment(n, tab);
-		ft_putout(n, tab, 1);
+			ft_print_comb_increment(n, arr);
+		ft_putout(n, arr, 1);
 	}
 }
 
