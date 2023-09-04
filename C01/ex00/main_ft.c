@@ -12,9 +12,9 @@ int main(void)
 	printf("%d\n", x);
 }
 
-//Burada bir integer x değeri oluşturduk.
-//Oluşan x değerimiz ram'de rastgele bir adreste oluşuyor.
-//Biz ise bu x değerine 13 verdik yani x'in ram'deki adresine 13 yazdık.
+//Burada bir integer x değişkeni oluşturduk.
+//Oluşan x değişkeni ram'de rastgele bir adreste oluşuyor.
+//Biz ise bu x değişkenine 13 verdik yani x'in ram'deki adresine 13 yazdık.
 //Ardından ft_ft fonksiyonuna *nbr işaretçisine &(ampersan) ile x değişkeninin adresini gönderdik.
 //Böylece artık *nbr işaretçisi x değişkeninin ram'deki adresini işaret ediyor.
 //ft_ft fonksiyonunun içinde ise biz bu *nbr işaretçisinin işaret ettiği yere 42 yazıyoruz.
