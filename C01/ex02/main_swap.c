@@ -8,10 +8,10 @@ void	ft_swap(int *a, int *b)
 #include <stdio.h>
 int main(void)
 {
-	int a = 13;
-	int b = 42;
-	ft_swap(&a, &b);
-	printf("New A:%d\nNew B:%d", a, b);
+	int x = 13;
+	int y = 42;
+	ft_swap(&x, &y);
+	printf("New X:%d\nNew Y:%d", x, y);
 }
 
 //Burada ise oluşturduğumuz iki değerin yerlerini değiştiriyoruz.
