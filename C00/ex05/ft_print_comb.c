@@ -20,7 +20,7 @@ void	ft_print_comb(void)
 				write(1, &c, 1);
 				if (a != '7')
 					write(1, ", ", 2);
-				C++;
+				c++;
 			}
 			b++;
 		}
