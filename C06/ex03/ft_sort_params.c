@@ -28,11 +28,11 @@ int	main(int ac, char **av)
 	int		a;
 	int		x;
 
-	x = 0;
-	while (++x < ac - 1)
+	x = ac;
+	while (--x)
 	{
 		a = 0;
-		while (++a < ac - 1)
+		while (++a < x)
 			if (ft_strcmp(av[a], av[a + 1]) > 0)
 				ft_swap(&av[a], &av[a + 1]);
 	}
