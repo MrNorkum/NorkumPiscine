@@ -21,8 +21,7 @@ void	ft_print_comb2(void)
 			ft_putchar(32);
 			ft_putchar(b / 10 + 48);
 			ft_putchar(b % 10 + 48);
-			if (a != 98)
-				write(1, ", ", 2);
+			write(1, ", ", 2 * (a != 98));
 			b++;
 		}
 		a++;

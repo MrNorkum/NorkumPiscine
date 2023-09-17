@@ -9,8 +9,7 @@ int	ft_atoi(char *str)
 		str++;
 	while (*str == '-' || *str == '+')
 	{
-		if (*str == '-')
-			d *= -1;
+		d *= (*str == '-') * -1 + !(*str == '-');
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
@@ -21,5 +20,5 @@ int	ft_atoi(char *str)
 #include <stdio.h>
 int main(void)
 {
-	printf("%d", ft_atoi("	 --+-+-1342a456789"));
+	printf("%d", ft_atoi("	 +---+1342a456789"));
 }

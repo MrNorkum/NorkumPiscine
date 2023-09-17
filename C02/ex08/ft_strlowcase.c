@@ -4,7 +4,6 @@ char	*ft_strlowcase(char *str)
 
 	i = -1;
 	while (str[++i])
-		if ('A' <= str[i] && str[i] <= 'Z')
-			str[i] += 32;
+		str[i] += ('A' <= str[i] && str[i] <= 'Z') * 32;
 	return (str);
 }

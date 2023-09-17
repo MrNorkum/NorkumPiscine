@@ -4,8 +4,7 @@ char	*ft_strupcase(char *str)
 
 	i = -1;
 	while (str[++i])
-		if ('a' <= str[i] && str[i] <= 'z')
-			str[i] -= 32;
+		str[i] -= ('a' <= str[i] && str[i] <= 'z') * 32;
 	return (str);
 }
 
