@@ -6,7 +6,7 @@ int	ft_swap(int *a, int *b)
 	return (1);
 }
 
-void	sort_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int i;
 	int is_swap;
