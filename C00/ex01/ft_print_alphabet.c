@@ -8,3 +8,10 @@ void	ft_print_alphabet(void)
 	while (x <= 122 && write(1, &x, 1))
 		x++;
 }
+
+void	ft_print_alphabet(void)
+{
+	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
+}
+
+//Hangisini kullanmak isterseniz onu kullanın.d
