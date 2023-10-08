@@ -4,6 +4,5 @@ int	ft_recursive_power(int nb, int power)
 		return (0);
 	if (!power)
 		return (1);
-	if (power > 0)
-		return (nb * ft_recursive_power(nb, power - 1));
+	return (nb * ft_recursive_power(nb, power - 1));
 }
