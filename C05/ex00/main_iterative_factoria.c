@@ -1,13 +1,13 @@
 int	ft_iterative_factorial(int nb)
 {
 	int	x;
-	int	i;
 
 	x = 1;
-	i = 1;
-	while (0 <= nb && nb <= 12 && ++i <= nb)
-		x *= i;
-	return ((0 <= nb && nb <= 12) * x);
+	if (nb < 0 || nb > 12)
+	    return (0);
+	while (nb)
+		x *= nb--;
+	return (x);
 }
 
 #include <stdio.h>
