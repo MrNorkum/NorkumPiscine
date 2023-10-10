@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Shell nedir?](#SHELL)
-2. [*sudo*](#sudo)
+2. [*VİM*](#VİM)
     - [Step 1: Installing *sudo*](#step-1-installing-sudo)
     - [Step 2: Adding User to *sudo* Group](#step-2-adding-user-to-sudo-group)
     - [Step 3: Configuring *sudo*](#step-3-configuring-sudo)
@@ -35,7 +35,7 @@
 ## SHELL
 [Click](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) to download the latest version of Debian.
 
-## *sudo*
+## *VİM*
 
 ### Step 1: Installing *sudo*
 Switch to root environment via `su -`.
