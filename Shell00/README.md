@@ -24,7 +24,7 @@ Vim nedir?
 • Metin işleme için **güçlü 'araçlar' sunar, örneğin, arama ve değiştirme.
 • 'Linux ve UNIX ile uyumlu' olup, komut satırından erişilebilir.
 ```
-Install *sudo* via `apt install sudo`.
+Nasıl Kullanılır?
 ```
 # apt install sudo
 ```
