@@ -36,11 +36,11 @@
 ### Step 1: *vim*
 Vim nedir?
 ```
- * **Vim**, Linux ve UNIX sistemlerinde kullanılan bir komut satırı metin düzenleyicisidir.
- * "Komut Modu" ve "Ekleme Modu" olmak üzere **iki temel** mod içerir.
- * Kullanıcılar, Vim'i **özelleştirebilir** ve hızlı klavye kullanımını teşvik eder.
- * Metin işleme için **güçlü araçlar** sunar, örneğin, arama ve değiştirme.
- * **Linux ve UNIX ile uyumlu** olup, komut satırından erişilebilir.
+ * 'Vim', Linux ve UNIX sistemlerinde kullanılan bir komut satırı metin düzenleyicisidir.
+ * "Komut Modu" ve "Ekleme Modu" olmak üzere 'iki temel' mod içerir.
+ * Kullanıcılar, Vim'i 'özelleştirebilir' ve hızlı klavye kullanımını teşvik eder.
+ * Metin işleme için **güçlü 'araçlar' sunar, örneğin, arama ve değiştirme.
+ * 'Linux ve UNIX ile uyumlu' olup, komut satırından erişilebilir.
 ```
 Install *sudo* via `apt install sudo`.
 ```
