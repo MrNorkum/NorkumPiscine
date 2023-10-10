@@ -1,9 +1,8 @@
 # 42-C-Picine
 
 ## Table of Contents
-1. [Shell nedir?](#SHELL)
-2. [*VIM*](#VIM)
-    - [Step 1: Installing *sudo*](#step-1-installing-sudo)
+2. [*Shell Nedir?*](#SHELL)
+    - [Step 1: *vim*](#step-1-vim)
     - [Step 2: Adding User to *sudo* Group](#step-2-adding-user-to-sudo-group)
     - [Step 3: Configuring *sudo*](#step-3-configuring-sudo)
 3. [SSH](#ssh)
@@ -32,16 +31,9 @@
 
 8. [Submission and peer-evaluation for 1337/42 Students](#peereval)
 
-## SHELL
-[Click](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) to download the latest version of Debian.
+## *SHELL*
 
-## *VIM*
- * **Vim**, Linux ve UNIX sistemlerinde kullanılan bir komut satırı metin düzenleyicisidir.
- * "Komut Modu" ve "Ekleme Modu" olmak üzere **iki temel** mod içerir.
- * Kullanıcılar, Vim'i **özelleştirebilir** ve hızlı klavye kullanımını teşvik eder.
- * Metin işleme için **güçlü araçlar** sunar, örneğin, arama ve değiştirme.
- * **Linux ve UNIX ile uyumlu** olup, komut satırından erişilebilir.
-### Step 1: Installing *sudo*
+### Step 1: *vim*
 Switch to root environment via `su -`.
 ```
 $ su -
