@@ -33,7 +33,7 @@ Verify whether *sudo* was successfully installed via `dpkg -l | grep sudo`.
 # dpkg -l | grep sudo
 ```
 
-### Step 2: Adding User to *sudo* Group
+### Step 2: Vim kullanımı
 Add user to *sudo* group via `adduser <username> sudo`.
 ```
 # adduser <username> sudo
