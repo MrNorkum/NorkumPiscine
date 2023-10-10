@@ -2,9 +2,9 @@
 
 ## Table of Contents
 1. [*Shell Nedir?*](#SHELL)
-    - [Step 1: *vim*](#step-1-vim)
-    - [Step 2: *vim kullanımı*](#step-2-vim-kullanımı)
-    - [Step 3: Configuring *sudo*](#step-3-configuring-sudo)
+    - [Adım 1: *vim*](#step-1-vim)
+    - [Adım 2: *vim kullanımı*](#step-2-vim-kullanımı)
+    - [Adım 3: Configuring *sudo*](#step-3-configuring-sudo)
 
 4. [User Management](#user-management)
     - [Step 1: Setting Up a Strong Password Policy](#step-1-setting-up-a-strong-password-policy)
@@ -15,7 +15,7 @@
 
 ## *SHELL*
 
-### Step 1: *vim*
+### Adım 1: *vim*
 Vim nedir?
 ```
 • 'Vim', Linux ve UNIX sistemlerinde kullanılan bir komut satırı metin düzenleyicisidir.
@@ -33,7 +33,7 @@ Verify whether *sudo* was successfully installed via `dpkg -l | grep sudo`.
 # dpkg -l | grep sudo
 ```
 
-### Step 2: Vim kullanımı
+### Adım 2: Vim kullanımı
 Add user to *sudo* group via `adduser <username> sudo`.
 ```
 # adduser <username> sudo
