@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. [*Shell Nedir?*](#SHELL)
-    - [Adım 1: *vim*](#step-1-vim)
-    - [Adım 2: *vim kullanımı*](#step-2-vim-kullanımı)
+    - [Adım 1: *vim*](#Adım-1-vim)
+    - [Adım 2: *vim kullanımı*](#Adım-2-vim-kullanımı)
     - [Adım 3: Configuring *sudo*](#step-3-configuring-sudo)
 
 4. [User Management](#user-management)
