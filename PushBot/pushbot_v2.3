@@ -14,10 +14,6 @@ find . -type f -name "a.out" -print -exec rm -ri {} \; && \
 
 find . -type f -name ".DS.Store" -print -exec rm -ri {} \; && \
 
-find . -type f -exec xattr -c {} \; && \
-
-find . -type d -exec xattr -c {} \; && \
-
 find . -name "*.c" -type f -exec sh -c 'grep -q "#include" {} && echo -e "\033[1;31mKütüphane Tanımlı!!!: {}\033[0m"' \; && \
 
 find . -name "*.c" -type f -exec sh -c 'grep -q "int main" {} && echo -e "\033[1;31mMain Dosyası Var: {}\033[0m"' \; && \
