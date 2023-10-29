@@ -1,11 +1,8 @@
 int	my_strlen(char *str)
 {
-	int	i;
-
-	i = -1;
-	while (str[++i])
-		;
-	return (i);
+	if (*str == '\0')
+		return (0);
+	return (1 + my_strlen(str + 1));
 }
 
 #include <stdio.h>
