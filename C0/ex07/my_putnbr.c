@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_putnbr(int nb)
+void	my_putnbr(int nb)
 {
 	long	n;
 
@@ -11,11 +11,11 @@ void	ft_putnbr(int nb)
 		n = -n;
 	}
 	if (n > 9)
-		ft_putnbr(n / 10);
+		my_putnbr(n / 10);
 	write(1, &"0123456789"[n % 10], 1);
 }
 
-void	ft_putnbr(int nb)
+void	my_putnbr(int nb)
 {
     long    n;
 
@@ -23,13 +23,13 @@ void	ft_putnbr(int nb)
     write(1, "-", (n < 0));
     n *= !(n < 0) - (n < 0);
     if (n > 9)
-       ft_putnbr(n / 10);
+       my_putnbr(n / 10);
     write(1, &"0123456789"[n % 10], 1);
 }
 
 int main(void)
 {
-	ft_putnbr(-42);
+	my_putnbr(-42);
 }
 
 //Hangisi kolayınıza geliyorsa onu kullanın.d
@@ -37,6 +37,6 @@ int main(void)
 //Burada ise integer aralığında verilen her sayıyı yazdırmamız gerekiyor.
 //Biz ise burada fonksiyona gönderdiğimiz sayıyı daha geniş bir aralık olan long aralığına gönderiyoruz.
 //Böylece integer aralığını aşma vs gibi durumlar olmadan işlemlerimizi rahatça yapabiliyoruz.
-//Fonksiyonda sayımız negatif ise putchar ile '-' yazdırıyoruz ve sayıyı pozitife çevirip işleme alıyoruz.
+//Fonksiyonda sayımız negatif ise write ile '-' yazdırıyoruz ve sayıyı pozitife çevirip işleme alıyoruz.
 //Sayımız iki basamaklı olduğu sürece bir basamak azaltarak fonksiyona tekrar gönderiyoruz.
 //Ardından sayımız tek basamaklı olduğu anda basamakların hepsini teker teker yazdırıyoruz.
