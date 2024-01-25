@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_print_comb.c                                                          */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/10 20:40:53 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/10 20:40:54 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	my_print_comb(void)
@@ -31,3 +43,13 @@ int main(void)
 {
 	my_print_comb();
 }
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

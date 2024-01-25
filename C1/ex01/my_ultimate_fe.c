@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_ultimate_fe.c                                                         */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/11 03:06:11 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/11 03:06:13 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 void	my_ultimate_fe(int *********nbr)
 {
 	*********nbr = 48;
@@ -19,7 +31,7 @@ int main(void)
 	printf("%d", x);
 }
 
-//Burada ise yaptığımız işlem çok basit.
+//Burada yaptığımız işlem çok basit.
 //Yine bir x değişkeni oluşturuyoruz.
 //Ve tabiki ram'de rastgele bir adreste oluşuyor.
 //Ardından x değişkenine 13 değerini veriyoruz ve böylece artık adresinde 13 yazıyor.
@@ -29,3 +41,13 @@ int main(void)
 //Böylece bütğn işaretçiler x değişkeninin adresini işaret ediyor.
 //Biz ise p8'in işaret ettiği yeri my_ultimate_fe fonksiyonuna gönderiyoruz ve nbr işaretçisi o adrese 48 yazıyor.
 //işlem bu kadar.
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_fibonacci.c                                                           */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/22 08:59:39 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/22 08:59:40 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 int	my_fibonacci(int index)
 {
 	if (index < 0)
@@ -21,4 +33,14 @@ int	main(void)
 	printf("%d\n", my_fibonacci(7));
 }
 
-// Hangisi kolayınıza geliyorsa onu kullanın.d
+//İkiside aynı çalışır inceleyin kullanın.
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

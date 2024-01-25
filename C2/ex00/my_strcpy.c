@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_strcpy.c                                                              */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/11 15:17:55 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/11 15:17:56 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 char	*my_strcpy(char *dest, char *src)
 {
 	int	i;
@@ -17,3 +29,13 @@ int	main(void)
 
 	printf("%s\n", my_strcpy(d, s));
 }
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

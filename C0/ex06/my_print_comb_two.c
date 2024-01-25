@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_print_comb_two.c                                                      */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/11 02:47:25 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/11 02:47:26 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	my_putchar(char x)
@@ -32,3 +44,13 @@ int main(void)
 {
 	my_print_comb_two();
 }
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

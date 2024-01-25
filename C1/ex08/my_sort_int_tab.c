@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_sort_int_tab.c                                                        */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/11 15:16:46 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/11 15:16:48 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 int	my_swap(int *a, int *b)
 {
 	*a = *a + *b;
@@ -33,3 +45,13 @@ int main(void)
 	while (i < 7)
 		printf("%d", arr[i++]);
 }
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

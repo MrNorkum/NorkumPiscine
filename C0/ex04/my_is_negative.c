@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_is_negative.c                                                         */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/10 20:40:25 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/10 20:40:26 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	my_is_negative(int n)
@@ -21,4 +33,14 @@ int main(void)
 	my_is_negative(42);
 }
 
-//İstediğinizi kullanabilirsiniz.d
+//İkiside aynı çalışır inceleyin kullanın.
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

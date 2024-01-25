@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_putchar.c                                                             */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/10 20:37:50 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/10 20:37:52 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	my_putchar(char c)
@@ -15,3 +27,13 @@ int main(void)
 //Çünkü write fonksiyonu ascii'ye göre çalışır.
 //'a' karakterinin ascii tablosundaki desimal karşılığı 97'dir.
 //Maini yazarken ikisinden birini örnek olarak kullanabilirsiniz.
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */

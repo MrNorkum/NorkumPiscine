@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                                            */
+/*   my_fe.c                                                                  */
+/*                                                                            */
+/*   By: Mr. Norkum <mrnorkum@gmail.com>                                      */
+/*                                                                            */
+/*   Created: 2024/01/11 03:05:08 by Mr. Norkum                   ig:mrnorkum */
+/*   Updated: 2024/01/11 03:05:14 by Mr. Norkum                   tg:mrnorkum */
+/*                                                                dc:mrnorkum */
+/* ************************************************************************** */
+
 void	my_fe(int *nbr)
 {
 	*nbr = 48;
@@ -23,3 +35,13 @@ int main(void)
 //O adreste 13 yazyordu ancak biz o adrese 48 yazdık.
 //Böylece x değişkenini yazdırdığımız zaman artık bize 48 çıktısı veriyor.
 //Çünkü adresinde artık 13 değil 48 yazıyor.
+
+/* ************************************************************************** */
+/*                                                                            */
+/*   Mr. Norkum                                                               */
+/*                                                                            */
+/*   Instagram: @mrnorkum                                                     */
+/*   Telegram: @mrnorkum                                                      */
+/*   Discord: @mrnorkum                                                       */
+/*                                                   mail: mrnorkum@gmail.com */
+/* ************************************************************************** */
