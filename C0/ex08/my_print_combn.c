@@ -66,8 +66,6 @@ int main(void)
 	my_print_combn(3);
 }
 
-//İkiside aynı çalışır inceleyin kullanın.
-
 /* ************************************************************************** */
 /*                                                                            */
 /*   Mr. Norkum                                                               */
