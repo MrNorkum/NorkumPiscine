@@ -28,7 +28,7 @@ char	*my_strjoin(int size, char **strs, char *sep)
 		while (strs[a][i])
 			s[j++] = strs[a][i++];
 		i = 0;
-		while (sep[i] && a < size - 1)
+		while (sep[i] && a != size - 1)
 			s[j++] = sep[i++];
 	}
 	return (s[j] = '\0', s);
