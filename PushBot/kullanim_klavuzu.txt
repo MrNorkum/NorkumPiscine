@@ -1,15 +1,53 @@
-Evet gelelim PushBot'a
-Bu bot sizin havuzda ve eğer ana eğitime geçerseniz sürekli kullanacağınız komutları bir araya toplayan bir shell scriptidir.
-Moulinette'e tam uygun gelişmiş Norminette atar.
-Dosyalarda main ve kütüphane denetimi yapar varsa söyler.
-İçeride unuttuğunuz a.out dosyalarını siler.
-Git deposu dahil . ile başlayan tüm klasör ve dosyaları siler.
-Her görünür dosya silme işleminde size silip silmemesi gerektiğini sorar.
-y derseniz siler n derseniz silmez.
-Bütün işlemler bittikten sonra kendisini silip silmemesi gerektiğini sorar.
-Eğer sizin içinde her şey tamamsa y dersiniz ve artık git deponuzu oluşturup pushlamaya geçebilirsiniz.
-Eğer hala hatalar var ise n'ye basıp gerekli yerleri düzelttikten sonra tekrar çalıştırabilirsiniz.
+PushBot V2.3 Kullanım Kılavuzu
 
-bash pushbot_v2.3 komutu ile pushlayacağınız klasör içinde çalıştırabilirsiniz.
+1. Adım: repoyu clone çekin
+- git clone https://github.com/MrNorkum/NorkumPiscine.git
+2. Adım: PushBot dizinine gidin
+- cd NorkumPiscine/PushBot
+3. Adım: install.sh'ı çalıştırın
+- bash install.sh
+4. Adım: Artık pushlamak istediğiniz reponun hazır olduğundan emin olmak için o dizine girip çalıştırabilirsiniz.
+Örneğin C00 dizini içindesiniz ve pushlamadan önce kontrol etmek istiyorsunuz. Terminale 'pushbot' yazarak kullanabilirsiniz.
+$> pushbot
 
-Lütfen stabil çalışması adına adının doğru olduğundan emin olun. -> pushbot_v2.3
+- PushBot V2.3, havuz döneminde ve ana eğitim süresince sürekli kullanacağınız komutları bir araya toplayan,
+iş akışınızı kolaylaştıran ve dosya temizliği sağlayan bir shell scriptidir.
+- Bu script, Moulinette'e tam uyumlu gelişmiş bir Norminette kontrolü gerçekleştirir,
+dosyalarda main fonksiyonu ve kütüphane kontrolleri yapar, gereksiz dosyaları temizler.
+
+Özellikler:
+
+Norminette Kontrolü:
+Script, .c uzantılı dosyaları Norminette ile denetler ve sonuçları raporlar.
+
+Kütüphane ve main Fonksiyonu Kontrolü:
+.c dosyalarında #include direktiflerini ve int main fonksiyonunu kontrol eder. Bulduğu dosyaları kırmızı renkte bildirir.
+
+ Dosyaların Temizliği:
+a.out dosyaları dahil olmak üzere gereksiz dosyaları bulur ve kullanıcı onayıyla siler.
+.git deposu dahil, . ile başlayan tüm gizli dosya ve dizinleri temizler.
+
+Kullanıcı Onayı ile Silme İşlemleri:
+Her dosya silme işlemi için kullanıcıdan onay ister (y ile siler, n ile silmez).
+
+Genişletilmiş Özniteliklerin Temizlenmesi:
+Tüm dosya ve dizinlerin genişletilmiş özniteliklerini temizler.
+
+Otomatik Kendi Kendini Temizleme:
+İşlemler tamamlandıktan sonra, kendisini silip silmemesi gerektiğini kullanıcıya sorar.
+
+Kullanım Talimatları:
+
+Script'in Adının Doğru Olduğundan Emin Olun:
+Script'in adı pushbot_v2.3 olmalıdır.
+
+Script'i Çalıştırma:
+Pushlamak istediğiniz klasör içinde terminalden şu komutu çalıştırın:
+$> bash pushbot_v2.3
+
+Silme İşlemleri:
+Script çalışırken, her dosya silme işlemi için size onay soracaktır. y tuşuna basarak silme işlemini onaylayabilir, n tuşuna basarak reddedebilirsiniz.
+
+
+PushBot V2.3, git deposu hazırlık sürecinizi kolaylaştırmak ve kodlarınızın temiz ve düzenli olmasını sağlamak amacıyla tasarlanmıştır.
+Bu script, eğitim sürecinizde ve sonrasında işlerinizi daha verimli hale getirecektir.
