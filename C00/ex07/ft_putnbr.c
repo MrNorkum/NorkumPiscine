@@ -25,7 +25,7 @@ void
 	if (n < 0) // Eğer sayı negatifse
 	{
 		write(1, "-", 1); // '-' işaretini yazdırır
-		n = 1 + ~n; // Negatif sayıyı pozitife çevirir (2'nin tümleme yöntemiyle)
+		n = -n; // Negatif sayıyı pozitife çevirir
 	}
 	if (n > 9) // Eğer sayı 9'dan büyükse
 		ft_putnbr(n / 10); // Sayının bir basamak eksilmiş halini yazdırır
