@@ -16,13 +16,21 @@
 #        */
 /* **************************** [^] INCLUDES [^] **************************** */
 
+int
+	ft_strlen(char *str) // ft_strlen (iterative)
+{
+	char *tmp; // Geçici işaretçi
+
+	tmp = str; // str dizisinin başlangıç adresini tmp'ye kaydet
+	while (*str) // str üzerinde sona gelene kadar dön
+		++str; // str işaretçisini bir sonraki karaktere ilerlet
+	return (str - tmp); // Son indeks ile başlangıç indeksi arasındaki farkı (uzunluğu) döndür
+}
+
 void
 	ft_putstr(char *str)
 {
-	if (*str == '\0') // Eğer karakter dizisinin başındaki karakter null karakter ise
-		return ; // Fonksiyonu sonlandır
-	write(1, str, 1); // İlk karakteri ekrana yaz
-	ft_putstr(str + 1); // Kalan karakterler için fonksiyonu tekrar çağır
+	write(1, str, ft_strlen(str)); //  karakter dizisinin başlangıç adresinden itibaren karakter dizisinin uzunluğu kadar yazdır
 }
 
 int
