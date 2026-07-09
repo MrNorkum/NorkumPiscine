@@ -19,10 +19,13 @@
 int
 	main(int argc, char *argv[])
 {
-	// argv[0] işaretçisinin gösterdiği karakter dizisi üzerinde döngü başlatılır
-	while (*argv[0] && write(1, argv[0]++, 1))
-		;
-	return (!argc); // argc'nin değeri 0 değil ise 0 döndürür (başarılı tamamlama)
+	int i;
+
+	i = 0;
+	(void)argc;
+	while (argv[0][i])
+		i++;
+	return (!write(1, argv[0], i));
 }
 
 /*
